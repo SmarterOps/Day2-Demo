@@ -15,7 +15,7 @@ jobs:
     needs: first-job
     steps:
       - name: update system
-        run: sudo apt update
+        run: sudo apt-get update
       - name: Date & time
         run: uptime
         
