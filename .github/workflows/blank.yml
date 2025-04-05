@@ -9,3 +9,13 @@ jobs:
 
       - name: say goodbay
         run: echo "goodbay"
+        
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update system
+        run: sudo apt update
+      - name: Date & time
+        run: uptime
+        
+  
